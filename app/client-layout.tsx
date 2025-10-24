@@ -149,7 +149,7 @@ const navigationItems = [
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/morykoulibaly",
+    href: "https://github.com/Morymirco",
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -164,7 +164,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/morykoulibaly",
+    href: "https://www.linkedin.com/in/mory-koulibaly",
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
