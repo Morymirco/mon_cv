@@ -112,7 +112,7 @@ export default function APropos() {
           {/* Section Formation */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
+            className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.education}
@@ -138,7 +138,7 @@ export default function APropos() {
           {/* Section Expérience */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
+            className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.experience}
@@ -169,7 +169,7 @@ export default function APropos() {
           {/* Section Valeurs */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
+            className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.values}
@@ -203,7 +203,7 @@ export default function APropos() {
           {/* Section Objectifs */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
+            className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.objectives}

@@ -229,30 +229,39 @@ export default function Home() {
             Mes Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
               className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl 
                           transition-all duration-300 flex flex-col items-center text-center space-y-4"
             >
               {icons.web}
               <h3 className="text-xl font-semibold dark:text-white">Développement Web</h3>
               <p className="text-gray-600 dark:text-gray-300">Sites web modernes et applications web performantes</p>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
               className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl 
                           transition-all duration-300 flex flex-col items-center text-center space-y-4"
             >
               {icons.mobile}
               <h3 className="text-xl font-semibold dark:text-white">Applications Mobiles</h3>
               <p className="text-gray-600 dark:text-gray-300">Solutions mobiles cross-platform avec Flutter</p>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
               className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl 
                           transition-all duration-300 flex flex-col items-center text-center space-y-4"
             >
               {icons.code}
               <h3 className="text-xl font-semibold dark:text-white">Solutions Sur Mesure</h3>
               <p className="text-gray-600 dark:text-gray-300">Développement personnalisé selon vos besoins</p>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </section>

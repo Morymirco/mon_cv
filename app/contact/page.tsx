@@ -143,7 +143,12 @@ export default function Contact() {
             </motion.section>
 
             {/* Carte des disponibilités */}
-            <div className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg"
+            >
               <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2 dark:text-white">
                 <svg
                   className="w-6 h-6 text-orange-500 dark:text-orange-400"
@@ -164,7 +169,7 @@ export default function Contact() {
                 Je suis disponible du lundi au vendredi, de 9h à 18h (GMT). Je réponds généralement aux messages dans
                 les 24 heures.
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Carte et Coordonnées */}

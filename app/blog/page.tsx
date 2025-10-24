@@ -126,7 +126,7 @@ export default function Blog() {
                     <div className="flex items-center gap-3">
                       <div className="relative w-8 h-8 rounded-full overflow-hidden">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profile-photo.jpg-R1e1uXntiyEHv8U1TpMMPbJ2lWRbQ6.jpeg"
+                          src={post.author.avatar || "/placeholder.svg"}
                           alt={post.author.name}
                           fill
                           className="object-cover"
