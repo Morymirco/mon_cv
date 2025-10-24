@@ -54,13 +54,13 @@ const icons = {
     </svg>
   ),
   code: (
-    <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-6 h-6 text-[#FF7A3D]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 18L22 12L16 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M8 6L2 12L8 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   mobile: (
-    <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-6 h-6 text-[#FF7A3D]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 18H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <rect
         x="5"
@@ -76,7 +76,7 @@ const icons = {
     </svg>
   ),
   web: (
-    <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-6 h-6 text-[#FF7A3D]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle
         cx="12"
         cy="12"
@@ -135,9 +135,9 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen flex flex-col dark:bg-gray-900">
+    <main className="min-h-screen flex flex-col bg-[#0A1628]">
       {/* Section Héro */}
-      <section className="hero-section min-h-[90vh] py-10 md:py-20 dark:bg-gray-900">
+      <section className="hero-section min-h-[90vh] py-10 md:py-20 bg-[#0A1628]">
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -192,8 +192,8 @@ export default function Home() {
         >
           <Link
             href="/contact"
-            className="group flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg 
-                      hover:bg-blue-700 dark:hover:bg-blue-500 transition-all duration-300 
+            className="group flex items-center gap-2 px-8 py-4 bg-[#FF7A3D] text-white rounded-lg 
+                      hover:bg-[#FF8C52] transition-all duration-300 
                       shadow-lg hover:shadow-xl w-full sm:w-auto justify-center"
           >
             {icons.contact}
@@ -201,10 +201,10 @@ export default function Home() {
           </Link>
           <Link
             href="/projets"
-            className="group flex items-center gap-2 px-8 py-4 bg-white dark:bg-gray-800 
-                      text-blue-600 dark:text-blue-400 rounded-lg 
-                      border-2 border-blue-600 dark:border-blue-400 
-                      hover:bg-blue-50 dark:hover:bg-gray-700
+            className="group flex items-center gap-2 px-8 py-4 bg-transparent
+                      text-[#FF7A3D] rounded-lg 
+                      border-2 border-[#FF7A3D]
+                      hover:bg-[#FF7A3D] hover:text-white
                       transition-all duration-300 w-full sm:w-auto justify-center"
           >
             {icons.projects}
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* Section Services */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-20">
+      <section className="bg-[#050B14] py-20">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -222,46 +222,45 @@ export default function Home() {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <h2
-            className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 
-                       to-blue-800 dark:from-blue-400 dark:to-blue-600 
-                       text-transparent bg-clip-text"
+            className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-[#FF7A3D] 
+                       to-[#4A90E2] text-transparent bg-clip-text"
           >
             Mes Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl 
-                          transition-all duration-300 flex flex-col items-center text-center space-y-4"
+              className="bg-[#0A1628] p-8 rounded-xl shadow-lg hover:shadow-xl 
+                          transition-all duration-300 flex flex-col items-center text-center space-y-4
+                          border border-gray-800"
             >
               {icons.web}
-              <h3 className="text-xl font-semibold dark:text-white">Développement Web</h3>
-              <p className="text-gray-600 dark:text-gray-300">Sites web modernes et applications web performantes</p>
+              <h3 className="text-xl font-semibold text-white">Développement Web</h3>
+              <p className="text-gray-400">Sites web modernes et applications web performantes</p>
             </div>
             <div
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl 
-                          transition-all duration-300 flex flex-col items-center text-center space-y-4"
+              className="bg-[#0A1628] p-8 rounded-xl shadow-lg hover:shadow-xl 
+                          transition-all duration-300 flex flex-col items-center text-center space-y-4
+                          border border-gray-800"
             >
               {icons.mobile}
-              <h3 className="text-xl font-semibold dark:text-white">Applications Mobiles</h3>
-              <p className="text-gray-600 dark:text-gray-300">Solutions mobiles cross-platform avec Flutter</p>
+              <h3 className="text-xl font-semibold text-white">Applications Mobiles</h3>
+              <p className="text-gray-400">Solutions mobiles cross-platform avec Flutter</p>
             </div>
             <div
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl 
-                          transition-all duration-300 flex flex-col items-center text-center space-y-4"
+              className="bg-[#0A1628] p-8 rounded-xl shadow-lg hover:shadow-xl 
+                          transition-all duration-300 flex flex-col items-center text-center space-y-4
+                          border border-gray-800"
             >
               {icons.code}
-              <h3 className="text-xl font-semibold dark:text-white">Solutions Sur Mesure</h3>
-              <p className="text-gray-600 dark:text-gray-300">Développement personnalisé selon vos besoins</p>
+              <h3 className="text-xl font-semibold text-white">Solutions Sur Mesure</h3>
+              <p className="text-gray-400">Développement personnalisé selon vos besoins</p>
             </div>
           </div>
         </motion.div>
       </section>
 
       {/* Section Témoignages */}
-      <section
-        className="py-20 bg-gradient-to-b from-white to-gray-50 
-                         dark:from-gray-900 dark:to-gray-800"
-      >
+      <section className="py-20 bg-gradient-to-b from-[#0A1628] to-[#050B14]">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -269,9 +268,8 @@ export default function Home() {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <h2
-            className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 
-                       to-blue-800 dark:from-blue-400 dark:to-blue-600 
-                       text-transparent bg-clip-text"
+            className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-[#FF7A3D] 
+                       to-[#4A90E2] text-transparent bg-clip-text"
           >
             Ce que disent mes clients
           </h2>
@@ -283,8 +281,9 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 * index }}
-                className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 
-                         hover:shadow-xl transition-shadow flex flex-col"
+                className="bg-[#0A1628] rounded-xl shadow-lg p-6 
+                         hover:shadow-xl transition-shadow flex flex-col
+                         border border-gray-800"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden">
@@ -296,23 +295,23 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg dark:text-white">{testimonial.name}</h3>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">{testimonial.role}</p>
-                    <p className="text-blue-600 dark:text-blue-400 text-sm">{testimonial.company}</p>
+                    <h3 className="font-semibold text-lg text-white">{testimonial.name}</h3>
+                    <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                    <p className="text-[#FF7A3D] text-sm">{testimonial.company}</p>
                   </div>
                 </div>
 
                 <blockquote className="relative">
                   <svg
                     className="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 
-                             h-16 w-16 text-gray-100 dark:text-gray-600"
+                             h-16 w-16 text-gray-800"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                     aria-hidden="true"
                   >
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
-                  <p className="relative text-gray-600 dark:text-gray-300 italic">{testimonial.content}</p>
+                  <p className="relative text-gray-300 italic">{testimonial.content}</p>
                 </blockquote>
               </motion.div>
             ))}
