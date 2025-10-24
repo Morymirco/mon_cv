@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
@@ -203,8 +203,17 @@ const socialLinks = [
 ]
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   const pathname = usePathname()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return <div className="min-h-screen relative pb-16 md:pb-0">{children}</div>
+  }
 
   return (
     <div className="min-h-screen relative pb-16 md:pb-0 bg-white dark:bg-[#091525]">
@@ -223,13 +232,13 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               </li>
             ))}
           </ul>
-          {/* Bouton de thème desktop - position absolue à droite */}
+          {/* Bouton de thème desktop */}
           <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
             className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             aria-label="Changer le thème"
           >
-            {theme === "dark" ? (
+            {resolvedTheme === "dark" ? (
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
@@ -321,13 +330,13 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
         </ul>
       </nav>
 
-      {/* Bouton de thème mobile - position fixe en haut à droite */}
+      {/* Bouton de thème mobile */}
       <button
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
         className="fixed top-4 right-4 p-2 rounded-lg bg-white dark:bg-[#101828] text-gray-600 dark:text-gray-300 shadow-lg md:hidden z-50"
         aria-label="Changer le thème"
       >
-        {theme === "dark" ? (
+        {resolvedTheme === "dark" ? (
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
