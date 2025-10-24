@@ -84,7 +84,7 @@ export default function BlogPost() {
   ]
 
   return (
-    <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-16 dark:bg-[#091525]">
+    <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-16 dark:bg-background">
       <motion.article initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-7xl mx-auto">
         {/* En-tête de l'article */}
         <motion.div
@@ -131,7 +131,7 @@ export default function BlogPost() {
               </div>
 
               {/* Contenu de l'article */}
-              <div className="bg-white dark:bg-[#0f1f35] p-8 rounded-xl shadow-lg">
+              <div className="bg-white dark:bg-card p-8 rounded-xl shadow-lg">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function BlogPost() {
             className="space-y-8"
           >
             {/* Auteur */}
-            <div className="bg-white dark:bg-[#0f1f35] p-6 rounded-xl shadow-lg">
+            <div className="bg-white dark:bg-card p-6 rounded-xl shadow-lg">
               <div className="flex items-center gap-4 mb-4">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profile-photo.jpg-R1e1uXntiyEHv8U1TpMMPbJ2lWRbQ6.jpeg"
@@ -162,7 +162,7 @@ export default function BlogPost() {
             </div>
 
             {/* Articles connexes */}
-            <div className="bg-white dark:bg-[#0f1f35] p-6 rounded-xl shadow-lg">
+            <div className="bg-white dark:bg-card p-6 rounded-xl shadow-lg">
               <h3 className="font-semibold mb-4 dark:text-white">Articles connexes</h3>
               <div className="space-y-4">
                 {relatedPosts.map((relatedPost) => (
@@ -199,7 +199,7 @@ export default function BlogPost() {
           <h2 className="text-2xl font-semibold mb-8 dark:text-white">Commentaires</h2>
 
           {/* Formulaire de commentaire */}
-          <div className="bg-white dark:bg-[#0f1f35] p-6 rounded-xl shadow-lg mb-8">
+          <div className="bg-white dark:bg-card p-6 rounded-xl shadow-lg mb-8">
             <h3 className="text-lg font-medium mb-4 dark:text-white">Laisser un commentaire</h3>
             <form className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -210,7 +210,7 @@ export default function BlogPost() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-[#0f1f35] dark:text-white rounded-lg focus:ring-2 
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-card dark:text-white rounded-lg focus:ring-2 
                              focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Votre nom"
                   />
@@ -222,7 +222,7 @@ export default function BlogPost() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-[#0f1f35] dark:text-white rounded-lg focus:ring-2 
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-card dark:text-white rounded-lg focus:ring-2 
                              focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="votre@email.com"
                   />
@@ -235,7 +235,7 @@ export default function BlogPost() {
                 <textarea
                   id="comment"
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-[#0f1f35] dark:text-white rounded-lg focus:ring-2 
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-card dark:text-white rounded-lg focus:ring-2 
                            focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder="Votre commentaire..."
                 ></textarea>
@@ -281,7 +281,7 @@ export default function BlogPost() {
                 key={comment.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-white dark:bg-[#0f1f35] p-6 rounded-xl shadow-lg"
+                className="bg-white dark:bg-card p-6 rounded-xl shadow-lg"
               >
                 <div className="flex items-start gap-4">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden">
