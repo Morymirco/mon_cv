@@ -146,7 +146,7 @@ export default function Home() {
         >
           <Image
             src="/images/profile-mory.png"
-            alt="Mory Koulibaly"
+            alt="Mory Koulibaly - Développeur Web et Mobile à Conakry, Guinée"
             width={200}
             height={200}
             className="rounded-full object-cover"
@@ -195,6 +195,7 @@ export default function Home() {
             className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-orange-500 text-white rounded-lg 
                       hover:from-blue-700 hover:to-orange-600 transition-all duration-300 
                       shadow-lg hover:shadow-xl w-full sm:w-auto justify-center"
+            aria-label="Contacter Mory Koulibaly pour un projet"
           >
             {icons.contact}
             <span>Me contacter</span>
@@ -206,6 +207,7 @@ export default function Home() {
                       border-2 border-blue-600 dark:border-blue-400 
                       hover:bg-blue-50 dark:hover:bg-gray-700
                       transition-all duration-300 w-full sm:w-auto justify-center"
+            aria-label="Découvrir les projets réalisés par Mory Koulibaly"
           >
             {icons.projects}
             <span>Voir mes projets</span>
@@ -214,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* Section Services */}
-      <section className="bg-gray-50 dark:bg-background py-20">
+      <section className="bg-gray-50 dark:bg-background py-20" aria-labelledby="services-heading">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -222,6 +224,7 @@ export default function Home() {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <h2
+            id="services-heading"
             className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 
                        to-blue-800 dark:from-blue-400 dark:to-blue-600 
                        text-transparent bg-clip-text"
@@ -229,7 +232,7 @@ export default function Home() {
             Mes Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -238,9 +241,11 @@ export default function Home() {
             >
               {icons.web}
               <h3 className="text-xl font-semibold dark:text-white">Développement Web</h3>
-              <p className="text-gray-600 dark:text-gray-300">Sites web modernes et applications web performantes</p>
-            </motion.div>
-            <motion.div
+              <p className="text-gray-600 dark:text-gray-300">
+                Sites web modernes et applications web performantes avec React, Next.js et Django
+              </p>
+            </motion.article>
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -249,9 +254,11 @@ export default function Home() {
             >
               {icons.mobile}
               <h3 className="text-xl font-semibold dark:text-white">Applications Mobiles</h3>
-              <p className="text-gray-600 dark:text-gray-300">Solutions mobiles cross-platform avec Flutter</p>
-            </motion.div>
-            <motion.div
+              <p className="text-gray-600 dark:text-gray-300">
+                Solutions mobiles cross-platform avec Flutter pour iOS et Android
+              </p>
+            </motion.article>
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
@@ -260,8 +267,10 @@ export default function Home() {
             >
               {icons.code}
               <h3 className="text-xl font-semibold dark:text-white">Solutions Sur Mesure</h3>
-              <p className="text-gray-600 dark:text-gray-300">Développement personnalisé selon vos besoins</p>
-            </motion.div>
+              <p className="text-gray-600 dark:text-gray-300">
+                Développement personnalisé selon vos besoins spécifiques
+              </p>
+            </motion.article>
           </div>
         </motion.div>
       </section>
@@ -270,6 +279,7 @@ export default function Home() {
       <section
         className="py-20 bg-gradient-to-b from-white to-gray-50 
                          dark:from-background dark:to-card"
+        aria-labelledby="testimonials-heading"
       >
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -278,6 +288,7 @@ export default function Home() {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <h2
+            id="testimonials-heading"
             className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 
                        to-blue-800 dark:from-blue-400 dark:to-blue-600 
                        text-transparent bg-clip-text"
@@ -287,7 +298,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <motion.div
+              <motion.article
                 key={testimonial.name}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -299,7 +310,7 @@ export default function Home() {
                   <div className="relative w-16 h-16 rounded-full overflow-hidden">
                     <Image
                       src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
+                      alt={`Photo de ${testimonial.name}, ${testimonial.role} chez ${testimonial.company}`}
                       fill
                       className="object-cover"
                     />
@@ -323,7 +334,7 @@ export default function Home() {
                   </svg>
                   <p className="relative text-gray-600 dark:text-gray-300 italic">{testimonial.content}</p>
                 </blockquote>
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </motion.div>
