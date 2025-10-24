@@ -66,7 +66,7 @@ export default function Contact() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg"
+              className="bg-white dark:bg-[#0f1f35] p-8 rounded-xl shadow-lg"
             >
               <h2 className="text-2xl font-semibold mb-6 dark:text-white">Envoyez-moi un message</h2>
               <form className="space-y-6">
@@ -147,7 +147,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg"
+              className="bg-white dark:bg-[#0f1f35] p-8 rounded-xl shadow-lg"
             >
               <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2 dark:text-white">
                 <svg
@@ -179,7 +179,7 @@ export default function Contact() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg"
+              className="bg-white dark:bg-[#0f1f35] p-8 rounded-xl shadow-lg"
             >
               <h2 className="text-2xl font-semibold mb-6 dark:text-white">Mes Coordonnées</h2>
               <div className="space-y-6">
@@ -258,7 +258,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="bg-white dark:bg-[#101828] p-4 rounded-xl shadow-lg overflow-hidden h-[400px]"
+              className="bg-white dark:bg-[#0f1f35] p-4 rounded-xl shadow-lg overflow-hidden h-[400px]"
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.454786128526!2d-13.6868085!3d9.5357003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1cd6de25e86b27%3A0x5c429789fa8506af!2sKaporo%2C%20Conakry!5e0!3m2!1sfr!2sgn!4v1709667149413!5m2!1sfr!2sgn"

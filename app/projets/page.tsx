@@ -244,11 +244,11 @@ export default function Projects() {
             <motion.div key={project.id} variants={item}>
               <Link href={`/projets/${project.id}`}>
                 <div
-                  className="bg-white dark:bg-[#101828] rounded-xl overflow-hidden shadow-lg 
+                  className="bg-white dark:bg-[#0f1f35] rounded-xl overflow-hidden shadow-lg 
                            hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"
                 >
                   {project.images ? (
-                    <div className="relative h-64 bg-gray-100 dark:bg-[#101828]">
+                    <div className="relative h-64 bg-gray-100 dark:bg-[#0f1f35]">
                       <div className="grid grid-cols-2 h-full">
                         <div className="relative">
                           <Image
@@ -277,7 +277,7 @@ export default function Projects() {
                       </div>
                     </div>
                   ) : (
-                    <div className="relative h-64 bg-gray-100 dark:bg-[#101828]">
+                    <div className="relative h-64 bg-gray-100 dark:bg-[#0f1f35]">
                       <Image
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}

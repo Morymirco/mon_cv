@@ -89,7 +89,7 @@ export default function Blog() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white dark:bg-[#101828] rounded-xl shadow-lg overflow-hidden 
+              className="bg-white dark:bg-[#0f1f35] rounded-xl shadow-lg overflow-hidden 
                        hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               <Link href={`/blog/${post.id}`} className="flex flex-col flex-grow">

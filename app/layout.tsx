@@ -83,7 +83,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={`${inter.className} dark:bg-[#091525]`}>
+      <body className={inter.className}>
         <Providers>
           <Suspense fallback={<Loading />}>
             <ClientLayout>{children}</ClientLayout>

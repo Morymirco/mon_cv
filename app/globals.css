@@ -27,7 +27,7 @@
   }
 
   .dark {
-    --background: 210 85% 7%; /* #091525 */
+    --background: 222.2 84% 4.9%; /* #091525 */
     --foreground: 210 40% 98%;
     --card: 210 85% 7%;
     --card-foreground: 210 40% 98%;
@@ -46,6 +46,10 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+  }
+
+  .dark {
+    color-scheme: dark;
   }
 }
 
