@@ -116,7 +116,7 @@ const navigationItems = [
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-          d="M17 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V5C19 3.89543 18.1046 3 17 3Z"
+          d="M17 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 17 21H17C18.1046 21 19 20.1046 19 19V5C19 3.89543 18.1046 3 17 3Z"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
@@ -207,9 +207,9 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   const pathname = usePathname()
 
   return (
-    <div className="min-h-screen relative pb-16 md:pb-0 dark:bg-gray-900">
+    <div className="min-h-screen relative pb-16 md:pb-0 bg-white dark:bg-[#091525]">
       {/* Navigation desktop */}
-      <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-lg p-4 z-50 hidden md:block">
+      <nav className="fixed top-0 w-full bg-white/80 dark:bg-[#091525]/80 backdrop-blur-sm shadow-lg p-4 z-50 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 relative">
           <ul className="flex justify-center space-x-8">
             {navigationItems.map((item) => (
@@ -299,7 +299,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t dark:border-gray-800 shadow-lg z-50 md:hidden">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-[#101828] border-t dark:border-gray-800 shadow-lg z-50 md:hidden">
         <ul className="flex justify-around items-center p-2">
           {navigationItems.map((item) => (
             <li key={item.name}>
@@ -324,7 +324,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       {/* Bouton de thème mobile - position fixe en haut à droite */}
       <button
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="fixed top-4 right-4 p-2 rounded-lg bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 shadow-lg md:hidden z-50"
+        className="fixed top-4 right-4 p-2 rounded-lg bg-white dark:bg-[#101828] text-gray-600 dark:text-gray-300 shadow-lg md:hidden z-50"
         aria-label="Changer le thème"
       >
         {theme === "dark" ? (
@@ -386,7 +386,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       <main className="pt-6 md:pt-20 dark:text-gray-100 min-h-screen pb-40">{children}</main>
 
       {/* Footer simplifié */}
-      <footer className="bg-white dark:bg-gray-800 border-t dark:border-gray-700 py-8">
+      <footer className="bg-white dark:bg-[#101828] border-t dark:border-gray-700 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}

@@ -135,9 +135,9 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen flex flex-col dark:bg-gray-900">
+    <main className="min-h-screen flex flex-col dark:bg-[#091525]">
       {/* Section Héro */}
-      <section className="hero-section min-h-[90vh] py-10 md:py-20 dark:bg-gray-900">
+      <section className="hero-section min-h-[90vh] py-10 md:py-20 dark:bg-[#091525]">
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* Section Services */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-20">
+      <section className="bg-gray-50 dark:bg-[#101828] py-20">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -230,7 +230,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl 
+              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl 
                           transition-all duration-300 flex flex-col items-center text-center space-y-4"
             >
               {icons.web}
@@ -238,7 +238,7 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300">Sites web modernes et applications web performantes</p>
             </div>
             <div
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl 
+              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl 
                           transition-all duration-300 flex flex-col items-center text-center space-y-4"
             >
               {icons.mobile}
@@ -246,7 +246,7 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-300">Solutions mobiles cross-platform avec Flutter</p>
             </div>
             <div
-              className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl 
+              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg hover:shadow-xl 
                           transition-all duration-300 flex flex-col items-center text-center space-y-4"
             >
               {icons.code}
@@ -260,7 +260,7 @@ export default function Home() {
       {/* Section Témoignages */}
       <section
         className="py-20 bg-gradient-to-b from-white to-gray-50 
-                         dark:from-gray-900 dark:to-gray-800"
+                         dark:from-gray-900 dark:to-[#101828]"
       >
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -283,7 +283,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 * index }}
-                className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 
+                className="bg-white dark:bg-[#101828] rounded-xl shadow-lg p-6 
                          hover:shadow-xl transition-shadow flex flex-col"
               >
                 <div className="flex items-center gap-4 mb-6">

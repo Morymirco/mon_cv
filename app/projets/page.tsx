@@ -162,7 +162,7 @@ export default function Projects() {
   }
 
   return (
-    <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-16 dark:bg-gray-900">
+    <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-16 bg-[#091525]">
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -244,11 +244,11 @@ export default function Projects() {
             <motion.div key={project.id} variants={item}>
               <Link href={`/projets/${project.id}`}>
                 <div
-                  className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg 
+                  className="bg-white dark:bg-[#101828] rounded-xl overflow-hidden shadow-lg 
                            hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"
                 >
                   {project.images ? (
-                    <div className="relative h-64 bg-gray-100 dark:bg-gray-700">
+                    <div className="relative h-64 bg-gray-100 dark:bg-[#101828]">
                       <div className="grid grid-cols-2 h-full">
                         <div className="relative">
                           <Image
@@ -277,7 +277,7 @@ export default function Projects() {
                       </div>
                     </div>
                   ) : (
-                    <div className="relative h-64 bg-gray-100 dark:bg-gray-700">
+                    <div className="relative h-64 bg-gray-100 dark:bg-[#101828]">
                       <Image
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}

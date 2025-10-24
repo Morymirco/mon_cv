@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-4">
+    <main className="min-h-screen flex items-center justify-center px-4 dark:bg-[#091525]">
       <div className="text-center space-y-8">
         {/* Animation du nombre 404 */}
         <motion.div

@@ -118,7 +118,7 @@ export default function Competences() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2-2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+            d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
           />
         </svg>
       ),
@@ -265,7 +265,7 @@ export default function Competences() {
   ]
 
   return (
-    <main className="pt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-16 dark:bg-gray-900">
+    <main className="pt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-16 dark:bg-[#091525]">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <h1
           className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 
@@ -282,7 +282,7 @@ export default function Competences() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg 
+              className="bg-white dark:bg-[#101828] p-8 rounded-xl shadow-lg 
                        hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
@@ -374,7 +374,7 @@ export default function Competences() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 + index * 0.1 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg 
+                className="bg-white dark:bg-[#101828] p-6 rounded-xl shadow-lg 
                          hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">

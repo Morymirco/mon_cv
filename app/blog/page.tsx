@@ -72,7 +72,7 @@ export default function Blog() {
   }
 
   return (
-    <main className="pt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-16 dark:bg-gray-900">
+    <main className="pt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-16 dark:bg-[#091525]">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <h1
           className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 
@@ -89,7 +89,7 @@ export default function Blog() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden 
+              className="bg-white dark:bg-[#101828] rounded-xl shadow-lg overflow-hidden 
                        hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               <Link href={`/blog/${post.id}`} className="flex flex-col flex-grow">

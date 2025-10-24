@@ -502,7 +502,7 @@ précisément l'emplacement des établissements et d'y accéder facilement.
   const project = projects[projectId as keyof typeof projects] || projects.kambily
 
   return (
-    <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-16 dark:bg-gray-900">
+    <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-16 dark:bg-[#091525]">
       <motion.article initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-7xl mx-auto">
         <div className="max-w-4xl mx-auto">
           <motion.h1
@@ -545,7 +545,7 @@ précisément l'emplacement des établissements et d'y accéder facilement.
               transition={{ delay: 0.2 }}
               className="md:col-span-2"
             >
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 space-y-6">
+              <div className="bg-white dark:bg-[#101828] rounded-xl shadow-lg p-6 space-y-6">
                 <div>
                   <h2 className="text-2xl font-semibold mb-4 dark:text-white">Description</h2>
                   <p className="text-gray-600 dark:text-gray-300">{project.longDescription}</p>
@@ -586,7 +586,7 @@ précisément l'emplacement des établissements et d'y accéder facilement.
               transition={{ delay: 0.3 }}
               className="space-y-6"
             >
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="bg-white dark:bg-[#101828] p-6 rounded-xl shadow-lg">
                 <h2 className="text-xl font-semibold mb-4 dark:text-white">Détails du projet</h2>
                 <dl className="space-y-4">
                   <div>
@@ -610,7 +610,7 @@ précisément l'emplacement des établissements et d'y accéder facilement.
                 </dl>
               </div>
 
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="bg-white dark:bg-[#101828] p-6 rounded-xl shadow-lg">
                 <h2 className="text-xl font-semibold mb-4 dark:text-white">Liens</h2>
                 <div className="space-y-4">
                   {project.link && (

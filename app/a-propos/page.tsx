@@ -31,7 +31,7 @@ const icons = {
     </svg>
   ),
   objectives: (
-    <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
   ),
@@ -112,7 +112,7 @@ export default function APropos() {
           {/* Section Formation */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.education}
@@ -138,7 +138,7 @@ export default function APropos() {
           {/* Section Expérience */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.experience}
@@ -169,7 +169,7 @@ export default function APropos() {
           {/* Section Valeurs */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.values}
@@ -203,7 +203,7 @@ export default function APropos() {
           {/* Section Objectifs */}
           <motion.section
             variants={fadeIn}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow dark:bg-[#101828]"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-3">
               {icons.objectives}
