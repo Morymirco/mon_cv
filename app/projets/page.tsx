@@ -185,7 +185,7 @@ export default function Projects() {
               onClick={() => setFilter("all")}
               className={`px-5 py-3 md:px-4 md:py-2 rounded-full text-base md:text-sm font-medium transition-colors ${
                 filter === "all"
-                  ? "bg-blue-600 text-white"
+                  ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
               }`}
             >
@@ -195,7 +195,7 @@ export default function Projects() {
               onClick={() => setFilter("web")}
               className={`px-5 py-3 md:px-4 md:py-2 rounded-full text-base md:text-sm font-medium transition-colors ${
                 filter === "web"
-                  ? "bg-blue-600 text-white"
+                  ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
               }`}
             >
@@ -205,7 +205,7 @@ export default function Projects() {
               onClick={() => setFilter("mobile")}
               className={`px-5 py-3 md:px-4 md:py-2 rounded-full text-base md:text-sm font-medium transition-colors ${
                 filter === "mobile"
-                  ? "bg-blue-600 text-white"
+                  ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
               }`}
             >
@@ -215,7 +215,7 @@ export default function Projects() {
               onClick={() => setFilter("backend")}
               className={`px-5 py-3 md:px-4 md:py-2 rounded-full text-base md:text-sm font-medium transition-colors ${
                 filter === "backend"
-                  ? "bg-blue-600 text-white"
+                  ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
               }`}
             >
@@ -225,7 +225,7 @@ export default function Projects() {
               onClick={() => setFilter("ongoing")}
               className={`px-5 py-3 md:px-4 md:py-2 rounded-full text-base md:text-sm font-medium transition-colors ${
                 filter === "ongoing"
-                  ? "bg-blue-600 text-white"
+                  ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
               }`}
             >

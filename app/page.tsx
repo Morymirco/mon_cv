@@ -54,13 +54,13 @@ const icons = {
     </svg>
   ),
   code: (
-    <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 18L22 12L16 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M8 6L2 12L8 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   mobile: (
-    <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 18H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <rect
         x="5"
@@ -76,7 +76,7 @@ const icons = {
     </svg>
   ),
   web: (
-    <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle
         cx="12"
         cy="12"
@@ -192,8 +192,8 @@ export default function Home() {
         >
           <Link
             href="/contact"
-            className="group flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg 
-                      hover:bg-blue-700 dark:hover:bg-blue-500 transition-all duration-300 
+            className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-orange-500 text-white rounded-lg 
+                      hover:from-blue-700 hover:to-orange-600 transition-all duration-300 
                       shadow-lg hover:shadow-xl w-full sm:w-auto justify-center"
           >
             {icons.contact}

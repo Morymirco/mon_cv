@@ -34,8 +34,8 @@ function SkillBar({ name, level, icon }: Skill) {
           initial={{ width: 0 }}
           animate={{ width: `${level}%` }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="h-full bg-gradient-to-r from-blue-500 to-blue-600 
-                   dark:from-blue-400 dark:to-blue-500 rounded-full"
+          className="h-full bg-gradient-to-r from-orange-500 to-orange-600 
+                   dark:from-orange-400 dark:to-orange-500 rounded-full"
         />
       </div>
     </div>
@@ -47,7 +47,7 @@ export default function Competences() {
     {
       title: "Technologies Frontend",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -93,7 +93,7 @@ export default function Competences() {
     {
       title: "CMS & Plateformes",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -113,12 +113,12 @@ export default function Competences() {
     {
       title: "Technologies Backend",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+            d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2-2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
           />
         </svg>
       ),
@@ -144,7 +144,7 @@ export default function Competences() {
     {
       title: "Bases de données",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -179,7 +179,7 @@ export default function Competences() {
     {
       title: "Développement Mobile",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -199,7 +199,7 @@ export default function Competences() {
     {
       title: "Design & UI/UX",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -231,7 +231,7 @@ export default function Competences() {
     {
       title: "Outils & Méthodologies",
       icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"

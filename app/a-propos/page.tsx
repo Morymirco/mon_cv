@@ -4,14 +4,14 @@ import { motion } from "framer-motion"
 
 const icons = {
   education: (
-    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14v7" />
     </svg>
   ),
   experience: (
-    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -21,7 +21,7 @@ const icons = {
     </svg>
   ),
   values: (
-    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -31,12 +31,12 @@ const icons = {
     </svg>
   ),
   objectives: (
-    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
   ),
   innovation: (
-    <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -46,7 +46,7 @@ const icons = {
     </svg>
   ),
   collaboration: (
-    <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -56,7 +56,7 @@ const icons = {
     </svg>
   ),
   excellence: (
-    <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -66,7 +66,7 @@ const icons = {
     </svg>
   ),
   dot: (
-    <svg className="w-2 h-2 text-blue-600" fill="currentColor" viewBox="0 0 8 8">
+    <svg className="w-2 h-2 text-orange-500" fill="currentColor" viewBox="0 0 8 8">
       <circle cx="4" cy="4" r="3" />
     </svg>
   ),
@@ -119,12 +119,12 @@ export default function APropos() {
               Formation
             </h2>
             <div className="space-y-4">
-              <div className="border-l-4 border-blue-600 pl-4">
+              <div className="border-l-4 border-orange-500 pl-4">
                 <h3 className="font-semibold text-lg">Licence en Développement de Logiciels</h3>
                 <p className="text-gray-600">Université Gamal Abdel Nasser de Conakry</p>
                 <p className="text-gray-500 text-sm">2018 - 2021</p>
               </div>
-              <div className="border-l-4 border-blue-600 pl-4">
+              <div className="border-l-4 border-orange-500 pl-4">
                 <h3 className="font-semibold text-lg">Certifications Professionnelles</h3>
                 <ul className="text-gray-600 list-disc ml-4 space-y-2">
                   <li>Développement Web Full Stack</li>
@@ -215,11 +215,15 @@ export default function APropos() {
                 objectif est de participer activement à la transformation digitale de notre société.
               </p>
               <div className="mt-4 flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm">
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 dark:bg-orange-900 dark:text-orange-200 rounded-full text-sm">
                   Innovation Technologique
                 </span>
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm">Impact Social</span>
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm">Excellence Technique</span>
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 dark:bg-orange-900 dark:text-orange-200 rounded-full text-sm">
+                  Impact Social
+                </span>
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 dark:bg-orange-900 dark:text-orange-200 rounded-full text-sm">
+                  Excellence Technique
+                </span>
               </div>
             </div>
           </motion.section>

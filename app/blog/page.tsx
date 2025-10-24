@@ -65,10 +65,10 @@ export default function Blog() {
   ]
 
   const categoryColors: { [key: string]: string } = {
-    Mobile: "bg-purple-100 text-purple-800",
-    Web: "bg-blue-100 text-blue-800",
-    Design: "bg-pink-100 text-pink-800",
-    Backend: "bg-green-100 text-green-800",
+    Mobile: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
+    Web: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+    Design: "bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200",
+    Backend: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
   }
 
   return (

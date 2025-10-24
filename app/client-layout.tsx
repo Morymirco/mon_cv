@@ -216,7 +216,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className={`text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-600 dark:after:bg-blue-400 after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300 ${pathname === item.href ? "text-blue-600 dark:text-blue-400 after:w-full" : ""}`}
+                  className={`text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 font-medium transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-orange-500 dark:after:bg-orange-400 after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300 ${pathname === item.href ? "text-orange-500 dark:text-orange-400 after:w-full" : ""}`}
                 >
                   {item.name}
                 </Link>
@@ -305,11 +305,11 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
             <li key={item.name}>
               <Link
                 href={item.href}
-                className={`flex flex-col items-center p-2 rounded-lg transition-colors ${pathname === item.href ? "text-blue-600 dark:text-blue-400" : "text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"}`}
+                className={`flex flex-col items-center p-2 rounded-lg transition-colors ${pathname === item.href ? "text-orange-500 dark:text-orange-400" : "text-gray-600 dark:text-gray-400 hover:text-orange-500 dark:hover:text-orange-400"}`}
               >
                 <span
                   className={
-                    pathname === item.href ? "text-blue-600 dark:text-blue-400" : "text-gray-600 dark:text-gray-400"
+                    pathname === item.href ? "text-orange-500 dark:text-orange-400" : "text-gray-600 dark:text-gray-400"
                   }
                 >
                   {item.icon}
@@ -402,8 +402,8 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-500 dark:text-gray-400 hover:text-blue-600 
-                           dark:hover:text-blue-400 transition-colors"
+                  className="text-gray-500 dark:text-gray-400 hover:text-orange-500 
+                           dark:hover:text-orange-400 transition-colors"
                   aria-label={item.name}
                 >
                   {item.icon}
